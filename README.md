@@ -14,3 +14,7 @@ I'm the creator and maintainer of **[OmniWM](https://github.com/OmniNull/OmniWM)
 
 - **[bobrwm](https://github.com/bobrwm/bobrwm)** — tiling window manager for macOS
   - **[Added multi-monitor retiling and fixed a window-event race](https://github.com/bobrwm/bobrwm/pull/13)** — Made display connect/disconnect trigger an automatic retile onto the new monitor layout, with a 50 ms dedup that collapses macOS's bursts of display and space notifications into a single retile. Found a latent race in the Objective-C → Zig event ring buffer: producers ran on concurrent GCD queues, but the ring was only safe for a single producer, so window events could be dropped or corrupted under load. Moved every producer onto the main thread and added a debug assertion to keep it there. A maintainer rebased the changes into main manually.
+
+### Recognition
+
+- **Cracked Remnant 2's datamining puzzle** — Figured out how to unlock the secret class Gunfire Games hid in the game files for dataminers. Covered by [IGN](https://www.ign.com/articles/remnant-2s-wild-data-mining-puzzle-was-solved-by-someone-with-no-coding-experience-a-fridge-full-of-red-bull-and-chatgpt) and [PC Gamer](https://www.pcgamer.com/remnant-2-devs-revealed-a-secret-class-only-datamining-could-uncover-only-for-a-guy-with-no-coding-experience-to-find-it-in-less-than-a-week-with-ai-and-15-cans-of-red-bull/).
